@@ -119,12 +119,47 @@
 /* ESERCIZIO 10 */
 .ex-10-icon {
     font-size: 60px;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(360deg);
+    }
+ 
 }
 
 /* ESERCIZIO 11 */
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation-name: spin-2;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes spin-2{
+    0%{
+        transform: rotate(0);
+    }
+
+    70%{
+        transform: rotate(315deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+ 
+}
+
+
+/* ESERCIZIO 12 e 13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
